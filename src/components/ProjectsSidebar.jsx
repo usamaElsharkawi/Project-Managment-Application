@@ -1,3 +1,4 @@
+import Button from "./Button";
 export default function ProjectSidebar() {
   return (
     <aside className=" px-8 py-16 rounded-r-xl bg-stone-900 text-stone-50 w-1/3 md:w-72 ">
@@ -5,9 +6,7 @@ export default function ProjectSidebar() {
         Your Projects
       </h1>
       <div>
-        <button className="bg-stone-700 text-stone-400 px-4 text-xs md:text-base py-2 rounded-xl hover:bg-stone-600 hover:text-stone-100">
-          + Add Project
-        </button>
+        <Button>+ Add Project</Button>
       </div>
       <ul></ul>
     </aside>
