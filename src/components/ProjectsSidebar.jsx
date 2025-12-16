@@ -1,5 +1,5 @@
 import Button from "./Button";
-export default function ProjectSidebar({handleAddNewProject}) {
+export default function ProjectSidebar({handleAddNewProject,projects}) {
   return (
     <aside className=" px-8 py-16 rounded-r-xl bg-stone-900 text-stone-50 w-1/3 md:w-72 ">
       <h1 className=" mb-8 uppercase font-bold md:text-xl text-stone-200 ">
@@ -8,7 +8,11 @@ export default function ProjectSidebar({handleAddNewProject}) {
       <div>
         <Button onClick={handleAddNewProject}>+ Add Project</Button>
       </div>
-      <ul></ul>
+      <ul className="mt-8">
+        {projects.map(project=> <li key={project.id}>
+          <button className="w-full text-left rounded-sm px-2 py-1 my-1 text-stone-400 hover:text-stone-200 hover:bg-stone-800" >{project.title}</button>
+        </li>)}
+      </ul>
     </aside>
   );
 }
