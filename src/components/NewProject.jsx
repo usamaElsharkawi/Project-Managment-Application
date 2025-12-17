@@ -3,7 +3,6 @@ import Input from "./Input";
 import Modal from "./Modal";
 export default function NewPorject({ onAdd, onCancel }) {
   const modal = useRef();
-  console.log(modal);
   const title = useRef();
   const description = useRef();
   const dueDate = useRef();
