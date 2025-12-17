@@ -17,6 +17,15 @@ function App() {
     });
   }
 
+  function handleCancleAddProject(){
+     setProjectsState((prevState) => {
+      return {
+        ...prevState,
+        selectedProject: undefined,
+      };
+    });
+  }
+
   function handleAddProject(projectData) {
     setProjectsState((prevState) => {
       const projecID = Math.random();
@@ -39,7 +48,7 @@ function App() {
     content = <NoProjectSelected handleAddNewProject={handleStartAddProject} />;
   }
   if (projectsState.selectedProject === null) {
-    content = <NewPorject onAdd={handleAddProject} />;
+    content = <NewPorject onAdd={handleAddProject} onCancel={handleCancleAddProject} />;
   }
   return (
     <main className="h-screen my-8 flex gap-8">
