@@ -30,30 +30,21 @@ A modern, responsive project management tool built with React and Tailwind CSS. 
 
 ## 💻 Getting Started
 
-1.  **Clone the repository:**
 
-    ```bash
-    git clone https://github.com/your-username/project-management-app.git
-    cd project-management-app
-    ```
-
-2.  **Install dependencies:**
+1.  **Install dependencies:**
 
     ```bash
     npm install
     ```
 
-3.  **Run the development server:**
+2.  **Run the development server:**
 
     ```bash
     npm run dev
     ```
 
-4.  **Build for production:**
+3.  **Build for production:**
     ```bash
     npm run build
     ```
 
-## 📄 License
-
-This project is open-source and available under the [MIT License](LICENSE).
